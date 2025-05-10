@@ -35,12 +35,12 @@ public class CarRentalApp {
             double base = rentedDays * dailyPrice;
             double discount = 0;
 
-            if (rentedDays >= 7) discount = 0.10; // %10 indirim 7 gün ve üzeri
+            if (rentedDays >= 7) discount = 0.10; 
             else if (rentedDays >= 3) discount = 0.05;
 
             double total = base - (base * discount);
 
-            if (isLuxury) total += 500; // Teminat bedeli
+            if (isLuxury) total += 500; 
 
             return total;
         }
@@ -115,7 +115,7 @@ public class CarRentalApp {
             System.out.println("0. Çıkış");
             System.out.print("Seçiminiz: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // Dummy
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
